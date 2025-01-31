@@ -202,7 +202,7 @@ function App() {
   return ( 
     <>
       <span ref={growingSpan} className="growing rounded-full block fixed top-[-20px] left-[-20px] w-5 h-5"></span>
-      <div className="w-full relative min-h-screen font-sans">
+      <div className="relative min-h-screen font-sans">
         {showCanvas && data[0].map((canvasdets,index)=>(//item is an array of objects
           <Canvas key={index} details={canvasdets}/>  
         ))}
