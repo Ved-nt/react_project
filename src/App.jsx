@@ -206,7 +206,7 @@ function App() {
         {showCanvas && data[0].map((canvasdets,index)=>(//item is an array of objects
           <Canvas key={index} details={canvasdets}/>  
         ))}
-        <div className="w-full relative h-screen z-[1]">
+        <div className="w-full pb-9 relative h-screen z-[1]">
           <nav className="w-full p-3 z-50 flex justify-between">
             <div className="brand text-2xl font-regular">Thirtysixstudio</div>
             <div className="links flex gap-10 mr-5">
@@ -221,7 +221,7 @@ function App() {
               ))}
             </div>
           </nav>
-          <div className="textcontainer w-full px-[20%] mt-7 mb-5 opacity-90">
+          <div className="textcontainer w-full px-[20%] mt-7 opacity-90">
             <div className="text w-[40%]">
               <h3 className="text-3xl leading-[1.3] ">
                 At Thirtysixstudio, we build immersive digital experiences for
@@ -235,17 +235,17 @@ function App() {
               <p className="text-md mt-6">Scroll</p>
             </div>
           </div>
-          <div className="w-full absolute left-0 bottom-0">{/*pl-5  for my laptop and pl-12 for kiit*/}
-            <h1 
-            ref={headingref}
-            className="text-[13.2rem] font-normal tracking-tight leading-none opacity-90 pl-4 " style={{ letterSpacing: '0.03em' }}
-            >
-              Thirtysixstudio
-            </h1>
-          </div>
         </div>
       </div>
-      <div className="w-full relative flex  justify-center h-screen mt-20 ">
+      <div className="w-full left-0 bottom-0">{/*pl-5  for my laptop and pl-12 for kiit*/}
+        <h1 
+          ref={headingref}
+          className="text-[11.1rem] font-normal tracking-tight leading-none opacity-90 pl-4 " style={{ letterSpacing: '0.03em' }}
+        >
+          Thirtysixstudio
+        </h1>
+      </div>
+      <div className="w-full relative flex justify-center h-screen mt-16 ">
         {showCanvas && data[1].map((canvasdets,index)=>(//item is an array of objects
           <Canvas key={index} details={canvasdets}/>  
         ))}
